@@ -28,6 +28,7 @@ function respondWith(payload: any, status: number, customHeaders = {}) {
 		headers["Content-Type"] = "application/json";
 		body = JSON.stringify(payload);
 	}
+
 	const res = new Response(body, {
 		status,
 		headers,
